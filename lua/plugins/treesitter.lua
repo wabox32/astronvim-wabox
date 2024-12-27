@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Treesitter
 
@@ -6,9 +6,11 @@ if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
+    hide_dotfiles = false,
     ensure_installed = {
       "lua",
       "vim",
+      "python"
       -- add more arguments for adding more treesitter parsers
     },
   },
